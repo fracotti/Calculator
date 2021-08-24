@@ -1,4 +1,5 @@
 "use strict"
+
 let result = document.getElementById("result");
 let userInput = document.getElementById("userInput");
 let calcButtonsNumbers = document.getElementsByClassName("numbers");
@@ -33,7 +34,7 @@ function buttonsNumbersAction(e){
 
 function operationsButtonsAction(e) {
     userInputOperations = e;
-    a = userInput.innerText += userInputNumbers + userInputOperations;
+    a = userInput.innerText = userInputNumbers + userInputOperations;
     // if(buttonsNumbersAction(e) === true) {
     //     a = userInput.innerText += userInputNumbers;
     // }
