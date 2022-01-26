@@ -6,162 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/digital-7-font/Digital7Italic-RBM3.ttf">
     <link rel="shortcut icon" href="/design/calculator.png" type="image/x-icon">
-<<<<<<< HEAD
     <link rel="stylesheet" href="/style.css">
     <title>Neumorphism Calculator</title>
 </head>
 <body> 
-=======
     <title>Neumorphism Calculator</title>
 </head>
 <body>
-    
-    <style>
-        @font-face {
-            font-family: "digital-7";
-            src: url(/digital-7-font/Digital7Italic-RBM3.ttf) format("truetype");
-        }
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: #bebebe;
-        }
-        #calculatorBody {
-            width: 464px;
-            height: 664px;
-            background-color: #1C1C1C;
-            border-radius: 50px;
-
-            display: flex;
-            flex-direction: column;
-            /* align-items: center;
-            align-content: center;
-            justify-content: center; */
-            margin: calc((100vh - 700px) / 2) auto;
-
-            box-shadow: 10px  10px 20px rgba(0, 0, 0, 0.25), 
-                       -10px -10px 20px #fff;
-
-            padding: 18px;
-        }
-        #outputer {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
-            align-content: space-around;
-            justify-content: space-around;
-            width: 408px;
-            height: 114px;
-
-            padding: 18px 10px;
-            margin: 18px 18px 50px 18px;
-
-            /* font-size: ; */
-            color: #fff;
-            background: #3D3D3D;
-            box-shadow: inset -5px -5px 10px #606060, 
-                        inset  5px  5px 10px rgba(0, 0, 0, 0.25);
-            border-radius: 25px;    
-        }
-        output {
-            font-size: 42px;
-            font-family: digital-7;
-            color: #fff;
-
-            user-select: none;
-
-            align-items: center; 
-            
-            justify-content: space-between;
-            /* text-align: center; */
-            
-        }
-        .outputBox {
-            height: 37px;
-            align-content: center;
-            justify-content: center;
-        }
-        #line {
-            display: flex;
-            
-            position: fixed;
-            
-            width: 408px;
-            height: 4px;
-            background-color: #1c1c1c;
-            /* top: 55px;
-            left: 3px; */
-            /* top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%); */
-            border-radius: 2px;
-
-            box-shadow: -2px -2px 4px #606060, 
-                         2px  2px 4px rgba(0, 0, 0, 0.25);
-        }
-        button {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-               
-            width: 80px;
-            height: 80px;
-            background-color: #1C1C1C;
-
-            color: #fff;
-            font-size: 45px;
-            user-select: none;
-
-            box-shadow: -5px -5px 10px #606060, 
-                         5px  5px 10px #000;
-            
-            border-radius: 50%;
-            border-style: none;
-            padding: 0;
-        }
-        button:active {
-            border-style: none;
-            user-select: none;
-            box-shadow: inset -5px -5px 10px #606060, 
-                        inset  5px  5px 5px #000;
-        }
-        .allBttns {
-            display: flex;
-            flex-wrap: wrap;
-            width: 428px;
-            height: 428px;
-            
-            /* top: 236px;
-            left: 18px; */
-
-            margin: 0 18px 18px 18px;
-        }
-        #bttn-1, #bttn-4, #bttn-7 {
-            margin: 0 18px 18px 0;
-        }
-       
-        #bttn-2, #bttn-3, #bttn-5, #bttn-6, #bttn-8, #bttn-9 {
-            margin: 0 18px 18px 18px;
-        }
-
-        #bttn-minus, #bttn-multiply, #bttn-division {
-            margin: 0 0 18px 18px;
-        }
-
-        #bttn-clean {
-            margin: 0 18px 0 0;
-        }
-
-        #bttn-0, #bttn-equal{
-            margin: 0 18px 0 18px;
-        } 
-        
-        #bttn-plus {
-            margin: 0 0 0 18px;
-        }
-    </style>
->>>>>>> eb419e8ce0b0473c8bd2ecea885617110aac4fa9
-
     <div id = "calculatorBody">
 
         <div id = "outputer">
@@ -173,7 +24,6 @@
         <div class = "allBttns">
  
             <div id = "bttn-7" class = "bttns">
-<<<<<<< HEAD
                 <button onclick = "receiveValue('7')" class = "numbers" >7</button>
             </div> 
         
@@ -219,53 +69,6 @@
 
             <div id = "bttn-minus">
                 <button onclick = "receiveValue('-')" class = "operations">-</button>
-=======
-                <button onclick = "buttonsNumbersAction('7')" class = "numbers" >7</button>
-            </div> 
-        
-            <div id = "bttn-8" >
-                <button onclick = "buttonsNumbersAction('8')" class = "numbers">8</button>
-            </div>
-
-            <div id = "bttn-9">
-                <button onclick = "buttonsNumbersAction('9')" class = "numbers">9</button>
-            </div>
-
-            <div id = "bttn-division">
-                <button onclick = "operationsButtonsAction('/')" class = "operations">÷</button>
-            </div>
-            
-            <div id = "bttn-4">
-                <button onclick = "buttonsNumbersAction('4')" class = "numbers">4</button>
-            </div>
-
-            <div id = "bttn-5">
-                <button onclick = "buttonsNumbersAction('5')" class = "numbers">5</button>
-            </div>
-
-            <div id = "bttn-6">
-                <button onclick = "buttonsNumbersAction('6')" class = "numbers">6</button>
-            </div>
-
-            <div id = "bttn-multiply">
-                <button onclick = "operationsButtonsAction('*')" class = "operations">x</button>
-            </div>
-
-            <div id = "bttn-1">
-                <button onclick = "buttonsNumbersAction('1')" class = "numbers">1</button>
-            </div>
-
-            <div id = "bttn-2">
-                <button onclick = "buttonsNumbersAction('2')" class = "numbers">2</button>
-            </div>
-
-            <div id = "bttn-3">
-                <button onclick = "buttonsNumbersAction('3')" class = "numbers">3</button>
-            </div>
-
-            <div id = "bttn-minus">
-                <button onclick = "operationsButtonsAction('-')" class = "operations">-</button>
->>>>>>> eb419e8ce0b0473c8bd2ecea885617110aac4fa9
             </div>
 
             <div id = "bttn-clean">
@@ -273,11 +76,7 @@
             </div>
 
             <div id = "bttn-0">
-<<<<<<< HEAD
                 <button onclick = "receiveValue('0')" class = "numbers">0</button>
-=======
-                <button onclick = "buttonsNumbersAction('0')" class = "numbers">0</button>
->>>>>>> eb419e8ce0b0473c8bd2ecea885617110aac4fa9
             </div> 
         
              <div id = "bttn-equal">
@@ -285,23 +84,13 @@
             </div> 
 
             <div id = "bttn-plus">
-<<<<<<< HEAD
                 <button onclick = "receiveValue('+')" class = "operations" >+</button>
-=======
-                <button onclick = "operationsButtonsAction('+')" class = "operations" >+</button>
->>>>>>> eb419e8ce0b0473c8bd2ecea885617110aac4fa9
             </div> 
 
         </div>
 
     </div>
 
-<<<<<<< HEAD
     <script src="/script.js"></script>
 </body>
 </html>
-=======
-    <script src="/calculator.js"></script>
-</body>
-</html>
->>>>>>> eb419e8ce0b0473c8bd2ecea885617110aac4fa9
