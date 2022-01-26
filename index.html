@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/digital-7-font/Digital7Italic-RBM3.ttf">
+    <link rel="shortcut icon" href="/design/calculator.png" type="image/x-icon">
+    <link rel="stylesheet" href="/style.css">
+    <title>Neumorphism Calculator</title>
+</head>
+<body> 
+
+    <div id = "calculatorBody">
+
+        <div id = "outputer">
+            <div class = "outputBox"><output id = "userInput"></output></div>
+            <div id = "line"></div>
+            <div class = "outputBox"><output id = "result"></output></div>           
+        </div>
+
+        <div class = "allBttns">
+ 
+            <div id = "bttn-7" class = "bttns">
+                <button onclick = "receiveValue('7')" class = "numbers" >7</button>
+            </div> 
+        
+            <div id = "bttn-8" >
+                <button onclick = "receiveValue('8')" class = "numbers">8</button>
+            </div>
+
+            <div id = "bttn-9">
+                <button onclick = "receiveValue('9')" class = "numbers">9</button>
+            </div>
+
+            <div id = "bttn-division">
+                <button onclick = "receiveValue('/')" class = "operations">÷</button>
+            </div>
+            
+            <div id = "bttn-4">
+                <button onclick = "receiveValue('4')" class = "numbers">4</button>
+            </div>
+
+            <div id = "bttn-5">
+                <button onclick = "receiveValue('5')" class = "numbers">5</button>
+            </div>
+
+            <div id = "bttn-6">
+                <button onclick = "receiveValue('6')" class = "numbers">6</button>
+            </div>
+
+            <div id = "bttn-multiply">
+                <button onclick = "receiveValue('*')" class = "operations">x</button>
+            </div>
+
+            <div id = "bttn-1">
+                <button onclick = "receiveValue('1')" class = "numbers">1</button>
+            </div>
+
+            <div id = "bttn-2">
+                <button onclick = "receiveValue('2')" class = "numbers">2</button>
+            </div>
+
+            <div id = "bttn-3">
+                <button onclick = "receiveValue('3')" class = "numbers">3</button>
+            </div>
+
+            <div id = "bttn-minus">
+                <button onclick = "receiveValue('-')" class = "operations">-</button>
+            </div>
+
+            <div id = "bttn-clean">
+                <button onclick = "cleanAll()" class = "operations">C</button>
+            </div>
+
+            <div id = "bttn-0">
+                <button onclick = "receiveValue('0')" class = "numbers">0</button>
+            </div> 
+        
+             <div id = "bttn-equal">
+                <button onclick = "writeResult()" class = "operations">=</button>
+            </div> 
+
+            <div id = "bttn-plus">
+                <button onclick = "receiveValue('+')" class = "operations" >+</button>
+            </div> 
+
+        </div>
+
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>

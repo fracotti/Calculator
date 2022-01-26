@@ -1,0 +1,142 @@
+@font-face {
+    font-family: "digital-7";
+    src: url(/digital-7-font/Digital7Italic-RBM3.ttf) format("truetype");
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #bebebe;
+}
+#calculatorBody {
+    width: 464px;
+    height: 664px;
+    background-color: #1C1C1C;
+    border-radius: 50px;
+
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;
+    align-content: center;
+    justify-content: center; */
+    margin: calc((100vh - 700px) / 2) auto;
+
+    box-shadow: 10px  10px 20px rgba(0, 0, 0, 0.25), 
+               -10px -10px 20px #fff;
+
+    padding: 18px;
+}
+#outputer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    align-content: space-around;
+    justify-content: space-around;
+    width: 408px;
+    height: 114px;
+
+    padding: 18px 10px;
+    margin: 18px 18px 50px 18px;
+
+    /* font-size: ; */
+    color: #fff;
+    background: #3D3D3D;
+    box-shadow: inset -5px -5px 10px #606060, 
+                inset  5px  5px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;    
+}
+output {
+    font-size: 42px;
+    font-family: digital-7;
+    color: #fff;
+
+    user-select: none;
+
+    align-items: center; 
+    
+    justify-content: space-between;
+    /* text-align: center; */
+    
+}
+.outputBox {
+    height: 37px;
+    align-content: center;
+    justify-content: center;
+}
+#line {
+    display: flex;
+    
+    position: fixed;
+    
+    width: 408px;
+    height: 4px;
+    background-color: #1c1c1c;
+    /* top: 55px;
+    left: 3px; */
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    border-radius: 2px;
+
+    box-shadow: -2px -2px 4px #606060, 
+                 2px  2px 4px rgba(0, 0, 0, 0.25);
+}
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+       
+    width: 80px;
+    height: 80px;
+    background-color: #1C1C1C;
+
+    color: #fff;
+    font-size: 45px;
+    user-select: none;
+
+    box-shadow: -5px -5px 10px #606060, 
+                 5px  5px 10px #000;
+    
+    border-radius: 50%;
+    border-style: none;
+    padding: 0;
+}
+button:active {
+    border-style: none;
+    user-select: none;
+    box-shadow: inset -5px -5px 10px #606060, 
+                inset  5px  5px 5px #000;
+}
+.allBttns {
+    display: flex;
+    flex-wrap: wrap;
+    width: 428px;
+    height: 428px;
+    
+    /* top: 236px;
+    left: 18px; */
+
+    margin: 0 18px 18px 18px;
+}
+#bttn-1, #bttn-4, #bttn-7 {
+    margin: 0 18px 18px 0;
+}
+
+#bttn-2, #bttn-3, #bttn-5, #bttn-6, #bttn-8, #bttn-9 {
+    margin: 0 18px 18px 18px;
+}
+
+#bttn-minus, #bttn-multiply, #bttn-division {
+    margin: 0 0 18px 18px;
+}
+
+#bttn-clean {
+    margin: 0 18px 0 0;
+}
+
+#bttn-0, #bttn-equal{
+    margin: 0 18px 0 18px;
+} 
+
+#bttn-plus {
+    margin: 0 0 0 18px;
+}
